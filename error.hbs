@@ -1,14 +1,14 @@
 {{!< default}}
 
-  <section class="error-content error-404 js-error-container">
-    <section class="error-details">
-         <h2 class="error-code">{{code}}</h2>
-         <h3 class="error-description">{{message}}</h3>
-         <p>Oops. Looks like something went wrong. </p>
-        <p>
-            <a class="error-link" href="{{@blog.url}}">Go to the front page →</a>
-         </p>
-    </section>
+<section class="error-content error-404 js-error-container">
+  <section class="error-details">
+       <h2 class="error-code">{{code}}</h2>
+       <h3 class="error-description">{{message}}</h3>
+       <p>Oops. Looks like something went wrong. </p>
+      <p>
+          <a class="error-link" href="{{@blog.url}}">Go to the front page →</a>
+       </p>
+  </section>
 </section>
 {{#if stack}}
     <section class="error-stack">
