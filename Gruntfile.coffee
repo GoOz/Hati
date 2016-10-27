@@ -21,6 +21,7 @@ module.exports = (grunt) ->
   [
     'grunt-contrib-clean'
     'grunt-contrib-watch'
+    'grunt-contrib-copy'
     'grunt-newer'
     'grunt-postcss'
     'grunt-svgstore'
