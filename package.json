@@ -1,0 +1,23 @@
+{
+  "name": "Hati",
+  "homepage": "https://github.com/GoOz/Hati",
+  "title": "Hati",
+  "description": "A simple Ghost theme, without JavaScript or bitmap images",
+  "version": "0.0.1",
+  "dependencies": {
+    "css-mqpacker": "^5.0.1",
+    "cssnano": "^3.8.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-newer": "^1.2.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-svgstore": "^1.0.0",
+    "postcss": "^5.2.5",
+    "postcss-cssnext": "^2.8.0",
+    "postcss-import": "^8.1.2",
+    "postcss-reporter": "^1.4.1",
+    "stylelint": "^7.5.0",
+    "time-grunt": "^1.4.0"
+  }
+}

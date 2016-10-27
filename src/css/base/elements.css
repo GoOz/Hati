@@ -1,0 +1,20 @@
+/*  ======================================================
+    Basic elements style
+    ======================================================  */
+body {
+  background-color: var(--bright);
+  color: var(--dark);
+  font-family: var(--helvetica-r);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--dark);
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}

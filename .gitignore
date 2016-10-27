@@ -1,0 +1,44 @@
+# ENVIRONNEMENT GLOBAL
+# -----------------------------------------------------------------------------
+# Pour être sur que le fichier .gitignore n'est jamais ignorer lui-même.
+!.gitignore
+
+# OS
+# -----------------------------------------------------------------------------
+# Ignorer les fichiers générés par les systèmes d'exploitation
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+
+# IDE
+# -----------------------------------------------------------------------------
+# Ignorer les fichiers générés par les IDE
+nbproject
+.~lock.*
+.buildpath
+.idea
+.project
+.settings
+*.todo
+
+# MODULES TIERS
+# -----------------------------------------------------------------------------
+# Ignorer les modules et logs nodes
+node_modules
+logs
+*.log
+npm-debug.log*
+yarn-error.log*
+
+
+# PROJET
+# -----------------------------------------------------------------------------
+
+# Ignorer le cache des modules Grunt
+.tmp

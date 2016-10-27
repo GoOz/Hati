@@ -1,0 +1,12 @@
+/*  ======================================================
+    Fonts declarations
+    ======================================================  */
+@font-face{
+    font-family:'Name';
+    src:url('../fonts/.eot?#iefix');
+    src:url('../fonts/.eot?#iefix') format('eot'),
+        url('../fonts/.woff2') format('woff2'),
+        url('../fonts/.woff') format("woff"),
+        url('../fonts/.ttf') format('truetype'),
+        url('../fonts/.svg') format('svg');
+}
