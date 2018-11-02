@@ -1,18 +1,36 @@
 {{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
 
-  <div class="main-post-list">
+{{!-- The main content area --}}
+<div class="inner">
 
-    <ol class="post-list">
-      {{#foreach posts}}
-      <li>
-        <h2 class="post-list__post-title post-title"><a href="{{url}}" title="link to {{{title}}}">{{{title}}}</a></h2>
-        <p class="excerpt">{{excerpt}}&hellip;</p>
-        <div class="post-list__meta"><time datetime="{{date format="DD MMM YYYY"}}" class="post-list__meta--date date">{{date format="DD MMM YYYY"}}</time> &#8226; <span class="post-list__meta--tags tags">{{tags prefix="on "}}</span></div>
-        <hr class="post-list__divider" />
-      </li>
-      {{/foreach}}
-    </ol>
+    <div class="feed">
+        {{!-- Get the 3 most recent posts --}}
+        <div class="feature">
+            <div class="feature-block">
+                {{#get "posts" limit="3" include="tags"}}
+                    {{#foreach posts}}
+                        {{> "feature-post"}}
+                    {{/foreach}}
+                {{/get}}
+            </div>
+            <h2 class="feature-block-title">Latest posts</h2>
+        </div>
 
-    {{pagination}}
+        {{!-- Get up to 3 featured posts on each tag --}}
+        {{!-- {{#foreach tags}}
+            <div class="block-feature tag—{{slug}}">
+                {{#get "posts" filter="tags:{{slug}}+featured:true" limit="3" as |related_posts| }}
+                    {{#if related_posts}}
+                        {{#foreach posts}}
+                            {{> "post-card"}}
+                        {{/foreach}}
+                        <h2 class="feature-title">{{name}}</h2>
+                    {{/if}}
+                {{/get}}
+            </div>
+        {{/foreach}} --}}
+    </div>
 
-  </div>
+</div>

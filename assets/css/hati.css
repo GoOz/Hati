@@ -1,1 +1,290 @@
-/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}[hidden],template{display:none}body{background-color:#fff;color:#000;font-family:Helvetica-Neue-Regular,sans-serif}*{box-sizing:border-box}a{color:#000}a:focus,a:hover{text-decoration:none}input[type=email],input[type=file],input[type=password],input[type=search],input[type=telephone],input[type=text],textarea{font-family:Helvetica-Neue-Regular,sans-serif;height:2.7rem;border:.07rem solid #fff;border-radius:0;background-color:#fff;line-height:2.7rem;padding:0 .5rem}input[type=email]::-webkit-input-placeholder,input[type=file]::-webkit-input-placeholder,input[type=password]::-webkit-input-placeholder,input[type=search]::-webkit-input-placeholder,input[type=telephone]::-webkit-input-placeholder,input[type=text]::-webkit-input-placeholder,textarea::-webkit-input-placeholder{font-style:italic;color:rgba(0,0,0,.7);opacity:1}input[type=email]::-moz-placeholder,input[type=file]::-moz-placeholder,input[type=password]::-moz-placeholder,input[type=search]::-moz-placeholder,input[type=telephone]::-moz-placeholder,input[type=text]::-moz-placeholder,textarea::-moz-placeholder{font-style:italic;color:rgba(0,0,0,.7);opacity:1}input[type=email]:-ms-input-placeholder,input[type=file]:-ms-input-placeholder,input[type=password]:-ms-input-placeholder,input[type=search]:-ms-input-placeholder,input[type=telephone]:-ms-input-placeholder,input[type=text]:-ms-input-placeholder,textarea:-ms-input-placeholder{font-style:italic;color:rgba(0,0,0,.7);opacity:1}textarea{min-height:2.7rem;height:8.75rem;padding:.3rem .5rem;line-height:1.5;resize:vertical}input[type=checkbox],input[type=radio]{position:absolute;overflow:hidden;clip:rect(0 0 0 0);height:.06rem;width:.06rem;margin:-.06rem;padding:0;border:0}input[type=checkbox]+label,input[type=radio]+label{position:relative;display:inline-block;padding-left:2rem;cursor:pointer}input[type=checkbox]+label:before,input[type=radio]+label:before{position:absolute;top:0;left:0;content:'';display:block;width:20px;width:1.25rem;height:20px;height:1.25rem;border:1.12px solid #000;border:.07rem solid #000;background-color:#fff}input[type=checkbox]+label:after,input[type=radio]+label:after{position:absolute;top:0;left:0;content:'';display:block;font-size:24px;font-size:1.5rem;line-height:1;color:#000}input[type=checkbox]+label.input-label--ico:after,input[type=checkbox]+label.input-label--ico:before,input[type=radio]+label.input-label--ico:after,input[type=radio]+label.input-label--ico:before{top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}input[type=checkbox]:checked+label:after{content:'✓'}input[type=radio]+label{padding-left:1.8rem}input[type=radio]+label:before{border-radius:50%}input[type=radio]+label:after{width:16px;width:1rem;height:16px;height:1rem;border-radius:50%;border:3.44px solid transparent;border:.215rem solid transparent;background-color:#fff;background-clip:padding-box}input[type=radio]:checked+label:after{background-color:#000}input[type=file]{padding:0;border:0;height:3rem;line-height:3rem}select{width:100%;border:none;border-radius:0;background-color:#fff;height:2.7rem;padding:.5rem 2.5rem .5rem 1.25rem;font-family:Helvetica-Neue-Regular,sans-serif;font-size:1.125rem;cursor:pointer;-webkit-appearance:none;-moz-appearance:none;appearance:none}select::-ms-expand{display:none}.u-clearfix:after{content:'';display:table;clear:both}.u-clear{clear:both}.u-visuallyhidden{position:absolute;overflow:hidden;clip:rect(0 0 0 0);height:.06rem;width:.06rem;margin:-.06rem;padding:0;border:0}.u-big{margin:1rem;font-size:1.5em}.u-strong{font-size:1.1em;font-weight:400}.u-italic{font-style:italic}.u-ib{display:inline-block}.u-nowrap{white-space:nowrap}.u-crop{overflow:hidden}.u-unlist{padding:0;list-style:none}.u-unlist>li{display:inline-block}.u-list{padding:0;list-style:none}.u-nomargin{margin:0!important}.u-mt0{margin-top:0}.u-mb0{margin-bottom:0}.u-ml0{margin-left:0}.u-mr0{margin-right:0}.u-mt-half{margin-top:.5rem}.u-mb-half{margin-bottom:.5rem}.u-ml-half{margin-left:.5rem}.u-mr-half{margin-right:.5rem}.u-mt1{margin-top:1rem}.u-mb1{margin-bottom:1rem}.u-ml1{margin-left:1rem}.u-mr1{margin-right:1rem}.u-mt2{margin-top:2rem}.u-mb2{margin-bottom:2rem}.u-ml2{margin-left:2rem}.u-mr2{margin-right:2rem}.u-mt3{margin-top:3rem}.u-mb3{margin-bottom:3rem}.u-ml3{margin-left:3rem}.u-mr3{margin-right:3rem}.u-nopad{padding:0!important}.u-pt0{padding-top:0}.u-pb0{padding-bottom:0}.u-pl0{padding-left:0}.u-pr0{padding-right:0}.u-pt-half{padding-top:.5rem}.u-pb-half{padding-bottom:.5rem}.u-pl-half{padding-left:.5rem}.u-pr-half{padding-right:.5rem}.u-pt1{padding-top:1rem}.u-pb1{padding-bottom:1rem}.u-pl1{padding-left:1rem}.u-pr1{padding-right:1rem}.u-pt2{padding-top:2rem}.u-pb2{padding-bottom:2rem}.u-pl2{padding-left:2rem}.u-pr2{padding-right:2rem}.u-pt3{padding-top:3rem}.u-pb3{padding-bottom:3rem}.u-pl3{padding-left:3rem}.u-pr3{padding-right:3rem}.u-center{margin:0 auto;text-align:center}.u-left{text-align:left}.u-right{text-align:right}.icons{display:none}
+/* Table of Contents
+/* ------------------------------------------------------------
+
+This is a development CSS file which is built to a minified
+production stylesheet in assets/built/screen.css
+
+1.  Global Styles
+2.  Layout
+3.  Special Templates
+4.  Site Header
+5.  Site Navigation
+6.  Post Feed
+7.  Single Post
+  7.1. Subscribe Form
+  7.2. Post Footer
+     7.2.1 Single Author Byline
+     7.2.2 Multiple Author Byline
+  7.3. Comments
+  7.4. Related Posts
+  7.5. Floating Header
+  7.6. Koenig Styles
+8.  Author Template
+9.  Error Template
+10. Subscribe Overlay
+
+*/
+
+/* 1. Global - Set up the things
+/* ---------------------------------------------------------- */
+@import "global.css";
+
+html, body {
+    height: 100%;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: var(--lightgrey);
+    font-size: 1.6rem;
+    color: var(--darkgrey);
+}
+
+/* 2. Layout - Page building blocks
+/* ---------------------------------------------------------- */
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  height: 100%;
+}
+
+.site-main {
+    flex: 1 1 auto;
+    order: 1;
+    overflow: auto;
+}
+
+/* Full width page blocks */
+.outer {
+    position: relative;
+    padding: 0 4vw;
+}
+
+/* Centered content container blocks */
+.inner {
+    margin: 0 auto;
+    max-width: 118rem;
+    width: 100%;
+}
+
+/* 3. Special Template Styles
+/* ---------------------------------------------------------- */
+.feature-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 3.2rem 0 0;
+}
+
+.feature-block-title {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.feature-post {
+    flex: 1 1 auto;
+    height:40vw;
+    position: relative;
+    overflow: hidden;
+    margin: 0 .8rem 1.6rem;
+    background-color: var(--midgrey);
+}
+
+.feature-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.feature-image {
+    display: block;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.feature-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -100%;
+    background-color: rgba(0, 0, 0, .7);
+    padding: .8rem 1.6rem;
+    color: white;
+    transition: ease all 600ms;
+}
+
+.feature-link:hover .feature-content,
+.feature-link:focus .feature-content {
+    bottom: 0;
+}
+
+.feature-title {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.feature-tag {
+    font-weight: light;
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+.feature-excerpt {
+    margin: .8rem 0 0;
+    font-size: 1.4rem;
+    line-height: 1.3;
+}
+
+.feature-excerpt p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .feature-block {
+        flex-wrap: wrap;
+    }
+    .feature-post {
+        min-width: calc(50% - 1.6rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-post {
+        min-width: calc(100% - 1.6rem);
+    }
+}
+
+/* 4. Site Header
+/* ---------------------------------------------------------- */
+
+.site-header {
+    flex: 0 1 auto;
+    padding: 1.6rem;
+    background-color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.site-header-title {
+    margin: 0;
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+}
+
+.site-header-logo {
+    color: var(--darkgrey);
+    text-decoration: none;
+}
+
+.site-header-logo img {
+    max-height: 3.2rem;
+}
+
+.site-header-desc {
+    margin: 1.6rem 0 0;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+/* 5. Site Navigation
+/* ---------------------------------------------------------- */
+.site-nav {
+    position: relative;
+    flex: 0 1 auto;
+    order: 2;
+    padding: 0 .8rem;
+    background-color: white;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 1rem 0;
+    overflow-x: auto;
+}
+
+.nav [class^="nav-"] {
+    margin: .4rem .8rem;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav a {
+    border: 2px solid transparent;
+    padding: .2rem .8rem;
+    color: var(--darkgrey);
+    text-decoration: none;
+    line-height: 1.6rem;
+}
+
+.nav a:hover,
+.nav a:focus {
+    border: 2px solid var(--midgrey);
+}
+
+.nav-icon a {
+    padding: 0;
+    border: 0;
+}
+
+.nav-icon a:hover,
+.nav-icon a:focus {
+    border: 0;
+}
+
+.nav-current a {
+    border: 2px solid var(--darkgrey);
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    color: var(--darkgrey);
+}
+
+.social-link svg {
+    height: 1.8rem;
+    fill: var(--darkgrey);
+}
+
+.social-link:hover svg,
+.social-link:focus svg {
+    fill: var(--midgrey);
+}
+
+.social-link-fb svg {
+    height: 1.5rem;
+}
+
+.social-link-wb svg {
+    height: 1.6rem;
+}
+
+.social-link-wb svg path {
+    stroke: var(--darkgrey);
+}
+
+.social-link-rss svg {
+    height: 1.9rem;
+}
+
+@media (max-width: 768)

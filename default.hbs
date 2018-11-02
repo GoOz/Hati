@@ -1,44 +1,80 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="{{lang}}">
 <head>
+
+    {{!-- Document Settings --}}
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    {{! Meta }}
-    <title>{{#unless post}}{{#if message}}{{message}} - {{@blog.title}}{{/if}}{{meta_title}}{{else}}{{meta_title}} - {{@blog.title}}{{/unless}}</title>
+    {{!-- Base Meta --}}
+    <title>{{meta_title}}</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    {{!-- Styles'n'Scripts --}}
+    <link rel="stylesheet" type="text/css" href="{{asset "built/hati.css"}}" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
 
-    <meta name="description" content="{{meta_description}}">
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="{{meta_title}}">
-    <meta name="twitter:description" content="{{meta_description}}">
-
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="{{meta_title}}">
-    <meta property="og:description" content="{{meta_description}}">
-
-    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
-
-    {{! Styles }}
-    <link rel="stylesheet" type="text/css" href="{{asset "css/hati.css"}}" />
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto:400,700" rel="stylesheet">
-
-    {{! Ghost Magic }}
+    {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
 
 </head>
 <body class="{{body_class}}">
 
-    {{{body}}}
+    <div class="site-wrapper">
+        <header class="site-header">
+            <div class="inner">
+                {{> header}}
+            </div>
+        </header>
+        <nav class="site-nav">
+            <div class="inner">
+                {{navigation}}
+            </div>
+        </nav>
 
-    {{> footer}}
+        {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
+        <main class="site-main">
+            {{{body}}}
+        </main>
 
-    {{! Ghost Footer Magic }}
+    </div>
+
+    <script>
+        var images = document.querySelectorAll('.kg-gallery-image img');
+        images.forEach(function (image) {
+            var container = image.closest('.kg-gallery-image');
+            var width = image.attributes.width.value;
+            var height = image.attributes.height.value;
+            var ratio = width / height;
+            container.style.flex = ratio + ' 1 0%';
+        })
+    </script>
+
+
+    {{!-- jQuery + Fitvids, which makes all video embeds responsive --}}
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="{{asset "built/jquery.fitvids.js"}}"></script>
+
+    {{#if pagination.pages}}
+    <script>
+        // maxPages is a global variable that is needed to determine
+        // if we need to load more pages for the infinitescroll, or if
+        // we reached the last page already.
+        var maxPages = parseInt('{{pagination.pages}}');
+    </script>
+    <script src="{{asset "built/infinitescroll.js"}}"></script>
+    {{/if}}
+
+    {{!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. --}}
+    {{{block "scripts"}}}
+
+    {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
     {{ghost_foot}}
+
 </body>
 </html>

@@ -1,0 +1,18 @@
+{{#if "home"}}
+    <h1 class="site-header-title">
+        {{#if @blog.logo}}
+            <span class="site-header-logo"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></span>
+        {{else}}
+            <span class="site-header-logo">{{@blog.title}}</span>
+        {{/if}}
+    </h1>
+{{else}}
+    <div class="site-header-title">
+        {{#if @blog.logo}}
+            <a class="site-header-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
+        {{else}}
+            <a class="site-header-logo" href="{{@blog.url}}">{{@blog.title}}</a>
+        {{/if}}
+    </div>
+{{/if}}
+{{#if @blog.description}}<p class="site-header-desc">{{@blog.description}}</p>{{/if}}

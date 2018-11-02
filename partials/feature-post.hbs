@@ -1,0 +1,18 @@
+<article class="feature-post {{post_class}}">
+    <a class="feature-link" href="{{url}}" tab-index="0">
+        {{#if feature_image}}
+            <div class="feature-image" style="background-image:url({{feature_image}});"></div>
+        {{/if}}
+        <div class="feature-content">
+            <header class="feature-header">
+                {{#if primary_tag}}
+                    <span class="feature-tag">{{primary_tag.name}}</span>
+                {{/if}}
+                <h3 class="feature-title">{{title}}</h3>
+            </header>
+            <section class="feature-excerpt">
+                <p>{{excerpt words="33"}}</p>
+            </section>
+        </div>
+    </a>
+</article>

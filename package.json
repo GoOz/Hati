@@ -1,24 +1,63 @@
 {
-  "name": "Hati",
-  "homepage": "https://github.com/GoOz/Hati",
-  "title": "Hati",
-  "description": "A simple Ghost theme, without JavaScript or bitmap images",
-  "version": "0.0.1",
-  "dependencies": {
-    "css-mqpacker": "^5.0.1",
-    "cssnano": "^3.8.0",
-    "grunt": "^1.0.1",
-    "grunt-contrib-clean": "^1.0.0",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-newer": "^1.2.0",
-    "grunt-postcss": "^0.8.0",
-    "grunt-svgstore": "^1.0.0",
-    "postcss": "^5.2.5",
-    "postcss-cssnext": "^2.8.0",
-    "postcss-import": "^8.1.2",
-    "postcss-reporter": "^1.4.1",
-    "stylelint": "^7.5.0",
-    "time-grunt": "^1.4.0"
-  }
+    "name": "Hati",
+    "description": "Ghost theme for photography",
+    "demo": "https://demo.ghost.io",
+    "version": "0.0.1",
+    "engines": {
+        "ghost": ">=2.0.0"
+    },
+    "license": "Unlicence",
+    "screenshots": {
+        "desktop": "assets/screenshot-desktop.jpg",
+        "mobile": "assets/screenshot-mobile.jpg"
+    },
+    "scripts": {
+        "dev": "gulp",
+        "zip": "gulp zip",
+        "test": "gscan ."
+    },
+    "author": {
+        "name": "GoOz",
+        "email": "gooz@foojin.com",
+        "url": "https://blog.foojin.com"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Minimal",
+            "Portfolio",
+            "Photography"
+        ]
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/GoOz/Hati.git"
+    },
+    "bugs": "https://github.com/GoOz/Hati/issues",
+    "contributors": "https://github.com/GoOz/Hati/graphs/contributors",
+    "devDependencies": {
+        "autoprefixer": "6.3.6",
+        "cssnano": "3.7.1",
+        "gscan": "^2.0.0",
+        "gulp": "3.9.1",
+        "gulp-livereload": "3.8.1",
+        "gulp-postcss": "6.1.1",
+        "gulp-sourcemaps": "1.6.0",
+        "gulp-util": "3.0.7",
+        "gulp-watch": "4.3.8",
+        "gulp-zip": "4.0.0",
+        "postcss-color-function": "2.0.1",
+        "postcss-custom-properties": "5.0.1",
+        "postcss-easy-import": "1.0.1",
+        "gulp-filter": "5.1.0",
+        "gulp-uglify": "3.0.1"
+    },
+    "config": {
+        "posts_per_page": 25
+    }
 }
