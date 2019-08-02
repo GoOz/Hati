@@ -1,0 +1,9 @@
+/* Dark mode colors */
+:root {
+    --darkgrey: #efefef;
+    --whitegrey: #e5eff5;
+    --midgrey: #999999;
+    --lightgrey: #333333;
+    --white: #000;
+    --alwayswhite: #fff;
+}

@@ -7,30 +7,36 @@ into the {body} of the default.hbs template --}}
 
     <div class="feed">
         {{!-- Get the 3 most recent posts --}}
-        <div class="feature">
-            <div class="feature-block">
+        <div class="posts">
+            <div class="posts-block">
                 {{#get "posts" limit="3" include="tags"}}
                     {{#foreach posts}}
-                        {{> "feature-post"}}
+                        {{> "post-card"}}
                     {{/foreach}}
                 {{/get}}
             </div>
-            <h2 class="feature-block-title">Latest posts</h2>
+            <h2 class="posts-block-title">Latest posts</h2>
         </div>
 
         {{!-- Get up to 3 featured posts on each tag --}}
-        {{!-- {{#foreach tags}}
-            <div class="block-feature tag—{{slug}}">
-                {{#get "posts" filter="tags:{{slug}}+featured:true" limit="3" as |related_posts| }}
-                    {{#if related_posts}}
-                        {{#foreach posts}}
-                            {{> "post-card"}}
-                        {{/foreach}}
-                        <h2 class="feature-title">{{name}}</h2>
-                    {{/if}}
-                {{/get}}
-            </div>
-        {{/foreach}} --}}
+        {{#get "tags"}}
+            {{#foreach tags}}
+                <div class="posts tag—{{slug}}">
+                    <a href="{{url}}" tab-index="0">
+                        <div class="posts-block">
+                            {{#get "posts" filter="tags:{{slug}}+featured:true" limit="3" }}
+                                {{#foreach posts}}
+                                    {{> "feature-post"}}
+                                {{/foreach}}
+                            {{/get}}
+                        </div>
+                        <h2 class="posts-block-title">{{name}}</h2>
+                        <p class="posts-block-desc">{{description}}</p>
+                    </a>
+                </div>
+            {{/foreach}}
+        {{/get}}
+
     </div>
 
 </div>

@@ -1,18 +1,20 @@
-{{#if "home"}}
+{{#is "index"}}
     <h1 class="site-header-title">
-        {{#if @blog.logo}}
-            <span class="site-header-logo"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></span>
+        {{#if @site.logo}}
+            <span class="site-header-logo"><img src="{{@site.logo}}" alt="{{@site.title}}" /></span>
         {{else}}
-            <span class="site-header-logo">{{@blog.title}}</span>
+            <span class="site-header-logo">{{@site.title}}</span>
         {{/if}}
     </h1>
+    {{#if @site.description}}
+        <p class="site-header-desc">{{@site.description}}</p>
+    {{/if}}
 {{else}}
     <div class="site-header-title">
-        {{#if @blog.logo}}
-            <a class="site-header-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
+        {{#if @site.logo}}
+            <a class="site-header-logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
         {{else}}
-            <a class="site-header-logo" href="{{@blog.url}}">{{@blog.title}}</a>
+            <a class="site-header-logo" href="{{@site.url}}">{{@site.title}}</a>
         {{/if}}
     </div>
-{{/if}}
-{{#if @blog.description}}<p class="site-header-desc">{{@blog.description}}</p>{{/if}}
+{{/is}}

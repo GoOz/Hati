@@ -1,22 +1,14 @@
 /* Variables
 /* ---------------------------------------------------------- */
 
+/* Default light colours */
 :root {
-    /* Colours */
-    --blue: #3eb0ef;
-    --green: #a4d037;
-    --purple: #ad26b4;
-    --yellow: #fecd35;
-    --red: #f05230;
-    --midgrey: #738a94;
-    --whitegrey: #e5eff5;
-    --pink: #fa3a57;
-    --brown: #a3821a;
-
-
     --darkgrey: #333333;
     --midgrey: #999999;
+    --whitegrey: #e5eff5;
     --lightgrey: #efefef;
+    --white: #fff;
+    --alwayswhite: #fff;
 }
 
 /* Reset
@@ -186,7 +178,7 @@ svg:not(:root) {
     overflow: hidden;
 }
 mark {
-    background-color: #fdffb6;
+    background-color: var(--whitegrey);
 }
 code,
 kbd,
@@ -291,7 +283,7 @@ body {
     font-style: normal;
     letter-spacing: 0;
     text-rendering: optimizeLegibility;
-    background: #fff;
+    background: var(--white);
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -300,7 +292,7 @@ body {
 
 ::selection {
     text-shadow: none;
-    background: color(var(--blue) lightness(+30%));
+    background: color(var(--whitegrey) lightness(+30%));
 }
 
 hr {
@@ -418,7 +410,7 @@ blockquote cite a {
 }
 
 a {
-    color: color(var(--blue) l(-5%));
+    color: color(var(--darkgrey) l(-5%));
     text-decoration: none;
 }
 
