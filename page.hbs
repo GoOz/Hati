@@ -1,17 +1,31 @@
 {{!< default}}
 
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
 {{#post}}
 
-  <article class="post-container post-container--single">
-
-    <header class="post-header">
-      <h1 class="post-title">{{{title}}}</h1>
-    </header>
-
-    <section class="{{post_class}}">
-      {{content}}
-    </section>
-
-  </article>
+<main class="inner">
+    <article class="post">
+        <h1 class="post-title">
+            {{title}}
+        </h1>
+        <section class="post-full-content">
+            <div class="post-content">
+                {{content}}
+            </div>
+        </section>
+    </article>
+</main>
 
 {{/post}}
+
+{{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
+{{#contentFor "scripts"}}
+<script>
+$(function() {
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+});
+</script>
+{{/contentFor}}

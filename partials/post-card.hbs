@@ -1,0 +1,20 @@
+<article class="post-card {{post_class}}">
+    <a class="post-card-link" href="{{url}}" tab-index="0">
+        {{#if feature_image}}
+            <div class="post-card-image" style="background-image:url({{feature_image}});"></div>
+        {{/if}}
+        <div class="post-card-content">
+            <header class="post-card-header">
+                {{^is "tag"}}
+                {{#if primary_tag}}
+                    <span class="post-card-tag">{{primary_tag.name}}</span>
+                {{/if}}
+                {{/is }}
+                <h3 class="post-card-title">{{title}}</h3>
+            </header>
+            <section class="post-card-excerpt">
+                <p>{{excerpt words="33"}}</p>
+            </section>
+        </div>
+    </a>
+</article>

@@ -1,0 +1,1 @@
+{"version":3,"sources":["dark.css"],"names":[],"mappings":"AACA,MACI,kBAAmB,CACnB,mBAAoB,CACpB,cAAkB,CAClB,gBAAoB,CACpB,YAAa,CACb,kBACJ","file":"dark.css","sourcesContent":["/* Dark mode colors */\n:root {\n    --darkgrey: #efefef;\n    --whitegrey: #e5eff5;\n    --midgrey: #999999;\n    --lightgrey: #333333;\n    --white: #000;\n    --alwayswhite: #fff;\n}\n"]}

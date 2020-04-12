@@ -1,25 +1,23 @@
 {{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
 
-  <h1 class="archive-title">Tag: {{tag.name}}</h1>
-
-  <hr class="section-title__divider" />
-
-  <div class="main-post-list">
-
-    <ol class="post-list">
-      {{#foreach posts}}
-      <li>
-        <h2 class="post-list__post-title post-title"><a href="{{url}}" title="link to {{{title}}}">{{{title}}}</a></h2>
-        <p class="excerpt">{{excerpt}}&hellip;</p>
-        <div class="post-list__meta">
-            <time datetime="{{date format="DD MMM YYYY"}}" class="post-list__meta--date date">{{date format="DD MMM YYYY"}}</time> &#8226;
-            <span class="post-list__meta--tags tags">{{#foreach tags}}<a href="{{url}}#blog" title="{{name}}">{{name}}</a>{{#if @last}}{{else}}, {{/if}}{{/foreach}}</span>
+{{!-- The big featured header, it uses blog cover image as a BG if available --}}
+<div class="inner">
+    {{#tag}}
+        <h1 class="post-title">
+            {{name}}
+        </h1>
+        {{#if description}}
+            <h2 class="post-description">
+                {{description}}
+            </h2>
+        {{/if}}
+    {{/tag}}
+    <div class="feed">
+        <div class="posts-block posts-block--{{tag.slug}}">
+            {{#foreach posts}}
+                {{> "post-card"}}
+            {{/foreach}}
         </div>
-        <hr class="post-list__divider" />
-      </li>
-      {{/foreach}}
-    </ol>
-
-    {{pagination}}
-
-  </div>
+    </div>
+</div>

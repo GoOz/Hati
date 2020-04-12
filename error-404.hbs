@@ -28,23 +28,6 @@
                 </h1>
                 <p class="error-description">{{message}}</p>
             </section>
-            {{#if errorDetails}}
-                <section class="error-stack">
-                    <h3>Theme errors</h3>
-                    <ul class="error-stack-list">
-                        {{#foreach errorDetails}}
-                            <li>
-                                <em class="error-stack-function">{{{rule}}}</em>
-
-                                {{#foreach failures}}
-                                    <p><span class="error-stack-file">Ref: {{ref}}</span></p>
-                                    <p><span class="error-stack-file">Message: {{message}}</span></p>
-                                {{/foreach}}
-                            </li>
-                        {{/foreach}}
-                    </ul>
-                </section>
-                {{/if}}
         </main>
 
     </div>
