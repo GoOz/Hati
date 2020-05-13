@@ -153,6 +153,7 @@ body {
     font-weight: light;
     font-size: 1.4rem;
     font-style: italic;
+    color: var(--alwayswhite);
 }
 
 .post-card-excerpt {
@@ -184,6 +185,7 @@ body {
 @media (max-width: 480px) {
     .post-card {
         min-width: calc(100% - 1.6rem);
+        height: 50vh;
     }
     .posts-block--quickshot .post-card {
         height: 100vw;
@@ -778,6 +780,7 @@ Usage (In Ghost editor):
 .post-full-content .kg-image {
     max-width: 100%;
     max-height: calc(100vh - 10rem);
+    width: auto;
 }
 
 kg-content *:first-child .kg-image {

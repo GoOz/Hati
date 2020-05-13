@@ -2,7 +2,7 @@
     "name": "hati",
     "description": "Ghost theme for photography",
     "demo": "https://www.bloogart.com",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "engines": {
         "ghost": ">=3.0.0",
         "ghost-api": "v3"
